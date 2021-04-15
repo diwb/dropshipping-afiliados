@@ -1,0 +1,26 @@
+.header {
+    padding: 30px 10%;
+    border-width: 3px;
+    color: #343a40;
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    border-style: ridge;
+}
+
+.search-input {
+    padding: 30px 10%;
+    border-width: 5px;
+    border-color: #343a40;
+}
+
+.search-input:hover {
+    border-color: #dc3545;
+}
+
+.border {
+    background-color: #343a40;
+    color: #fff;
+}
