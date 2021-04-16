@@ -4,6 +4,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button'
+
+import { AiOutlineBell } from "react-icons/ai";
 
 import '../../pages/Main/style.css'
 import '../Card/style.css'
@@ -11,8 +14,8 @@ import Popover from '../../components/Popover/Popover'
 import ButtonLink from '../../components/Button/Button'
 
 export default function OverlayTriggerDefault(props) {
-const form = (
-    <Form>
+    const form = (
+        <Form>
         <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Siga os passos abaixo:</Form.Label>
@@ -48,20 +51,25 @@ const form = (
         <ButtonLink variant="danger" text="Salvar" type="submit"/>
     </div>
 </Form>
-)
-
+    )
 
     const popover = (
         <Popover 
           title="Receber Notificações" 
           as="h3" 
-          content={ form }
+          content=""
           />
       );
 
     return (
-        <OverlayTrigger trigger={['click', 'focus']}  overlay={ popover } key="left" placement="left" >
-              {  props.element}
+        <OverlayTrigger trigger={['click', 'focus']}  overlay={ popover } >
+                <Button 
+                     id="draggable" 
+                     className="pulse-button"
+                    >
+                       {<AiOutlineBell 
+                             className="pulse-btn"/> }
+                     </Button>            
         </OverlayTrigger>
     )
 }

@@ -231,3 +231,24 @@ footer {
         text-align: center;
         font-size: 170%;
   }
+
+  /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .jumbotron form {
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .jumbotron form {
+        font-size: 2em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .jumbotron form {
+        font-size: 100%;
+    }
+}
