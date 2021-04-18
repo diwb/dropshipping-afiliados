@@ -9,7 +9,7 @@ import '../Card/style.css'
 export default function OverlayTriggerDefault(props) {
     return (
         <OverlayTrigger 
-            trigger={['click', 'focus']}  
+            trigger="click"  
             overlay={ props.overlay } 
             placement={props.placement}
         >
