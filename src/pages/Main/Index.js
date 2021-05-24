@@ -50,7 +50,7 @@ export default function Page() {
                         </Button>} 
                 /> 
             </div>
-              <p className="company-name"><b>Promo Fácil</b></p>
+              <p className="company-name"><b>Promo Hub</b></p>
               
               <p>Copyright © 2021 
 				        <em><a href="https://diwb.com.br"><b> DIWB - Do It With a Bot </b></a></em> 
